@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+	  <useWindowsForms>true</useWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PlatformerImages\Png files\platform15x200.png" />
+    <None Remove="PlatformerImages\Png files\PlatformerBaggroundImg.png" />
+    <None Remove="PlatformerImages\Png files\playerImg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="PlatformerImages\Png files\platform15x200.png" />
+    <Resource Include="PlatformerImages\Png files\PlatformerBaggroundImg.png" />
+    <Resource Include="PlatformerImages\Png files\playerImg.png" />
+  </ItemGroup>
+
+</Project>
