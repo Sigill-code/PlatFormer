@@ -44,8 +44,8 @@ namespace PlatFormer
 
             if (check || thePlayer.PositionY < platform.Bottom)
             {
-                thePlayer.PositionX = 650;
-                thePlayer.PositionY = 300;
+                thePlayer.PositionX = 450;
+                thePlayer.PositionY = 100;
             }
         }
 

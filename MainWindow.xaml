@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="900"
         KeyDown="MoveMethod"
-        KeyUp="StopMovement"
-        >
+        KeyUp="StopMovement">
 
     <Canvas x:Name="Frame">
         <Canvas.Background>
@@ -19,12 +18,21 @@
                 <ImageBrush ImageSource="/PlatformerImages/Png files/playerImg.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="RectPlatform" Height="15" Width="300" Stroke="Black" Canvas.Left="300" Canvas.Bottom="45">
+        <Rectangle x:Name="RectPlatform" Height="15" Width="700" Stroke="Black" Canvas.Left="100" Canvas.Bottom="45">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/PlatformerImages/Png files/platform15x200.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        
+        <Rectangle x:Name="RectPlatform1" Height="15" Width="300" Stroke="Black" Canvas.Left="500" Canvas.Bottom="140">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/PlatformerImages/Png files/platform15x200.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="RectPlatform2" Height="15" Width="300" Stroke="Black" Canvas.Left="130" Canvas.Bottom="220">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/PlatformerImages/Png files/platform15x200.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
         <Rectangle x:Name="bottomLine" Height="15" Width="750" Canvas.Bottom="1" Canvas.Left="0"/>
     </Canvas>
 </Window>

@@ -31,7 +31,6 @@ namespace PlatFormer
             TickMethodGraphic();
         }
         
-        
         public void TickMethodGraphic()
         {
             DispatcherTimer graphics = new DispatcherTimer();
@@ -53,6 +52,7 @@ namespace PlatFormer
         }
         void CreatePlayer(Player player)
         {
+            
             RectPlayer.SetValue(Canvas.LeftProperty, player.PositionX);
             RectPlayer.SetValue(Canvas.BottomProperty, player.PositionY);
         }
@@ -68,7 +68,11 @@ namespace PlatFormer
             double playerY = Canvas.GetBottom(RectPlayer);
             double playerX = Canvas.GetLeft(RectPlayer);
             Platform newplatform = new Platform(Canvas.GetLeft(RectPlatform), Canvas.GetBottom(RectPlatform), RectPlatform.Width, RectPlatform.Height);
+            Platform newplatform1 = new Platform(Canvas.GetLeft(RectPlatform1), Canvas.GetBottom(RectPlatform1), RectPlatform1.Width, RectPlatform1.Height);
+            Platform newplatform2 = new Platform(Canvas.GetLeft(RectPlatform2), Canvas.GetBottom(RectPlatform2), RectPlatform2.Width, RectPlatform2.Height);
             list.Add(newplatform);
+            list.Add(newplatform1);
+            list.Add(newplatform2);
             return list;
 
         }
